@@ -32,7 +32,7 @@ Users tap their NFC card on a Raspberry Pi reader, sign in with a password plus 
 - Soft deletes, so rental history stays intact after a user or item is removed
 - Items track a running average rating from returns
 - Face verification attempts are logged with their confidence score
-- Terms of Service and face-data consent shown at registration
+- Terms of Service option
 
 ## How it works
 
@@ -86,9 +86,9 @@ You'd need the same hardware setup (a Pi with a PN532 reader, NFC cards/stickers
 
 ## Limitations / what I'd do differently
 
-This was a prototype built for a class demo, so some shortcuts were taken:
+This was a prototype built as a demo, so some shortcuts were taken:
 
 - Passwords are stored in plain text and checked in the browser. A real version would hash them (bcrypt) and check them on the server.
 - The API has no authentication, and admin actions are only protected by the UI.
-- LBPH face recognition is lightweight but not very robust (lighting-sensitive, no liveness check), and users can fall back to password-only after 3 failed attempts.
+- LBPH face recognition is lightweight but not very robust (lighting-sensitive, no liveness check), and users can fall back to password-only after 3 failed attempts (for ease in demo).
 - Scan state is a single global value, so it supports one kiosk at a time.
