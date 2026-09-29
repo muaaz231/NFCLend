@@ -179,3 +179,15 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# ---- NFCLend-specific ----
+# Face images captured during registration (real biometric data — never commit)
+face_data/
+
+# Local databases / DB Browser project files
+*.db
+*.sqlite
+*.sqlite3
+*.sqbpro
+
+# macOS
+.DS_Store

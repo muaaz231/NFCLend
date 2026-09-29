@@ -1,0 +1,7 @@
+# Mac / server side (face_server.py, ui_app.py, face_engine.py)
+flask
+requests
+psycopg2-binary
+numpy
+opencv-contrib-python   # "contrib" build is required for cv2.face (LBPH recognizer)
+python-dotenv           # optional, loads .env automatically

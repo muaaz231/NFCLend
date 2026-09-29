@@ -1,0 +1,4 @@
+# Raspberry Pi side (nfc_mainVer3.py)
+adafruit-blinka
+adafruit-circuitpython-pn532
+requests
