@@ -92,3 +92,5 @@ This was a prototype built as a demo, so some shortcuts were taken:
 - The API has no authentication, and admin actions are only protected by the UI.
 - LBPH face recognition is lightweight but not very robust (lighting-sensitive, no liveness check), and users can fall back to password-only after 3 failed attempts (for ease in demo).
 - Scan state is a single global value, so it supports one kiosk at a time.
+
+Made by Muaaz Aslam and Ryan Sharma
